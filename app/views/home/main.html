@@ -1,0 +1,139 @@
+
+<adedo-menu></adedo-menu>
+
+<div class="top-container">
+	<div class="map-container">
+
+	</div>
+	<adedo-map-search></adedo-map-search>
+</div>
+
+<div class="mainContainer">
+	<div class="row clearfix">
+
+		<div class="span12 nugget-stats" id="nugget-stats">
+			<div class="statistic">
+				<p class="data">{{statistics.co2_savings}} Kgs</p>
+				<p class="stat-label">Reducción de CO2</p>
+				<div class="recycleIcon"></div>
+			</div>
+			<div class="statistic">
+				<p class="data dataTrips">{{statistics.total_trips_count}}</p>
+				<p class="stat-label">Viajes compartidos</p>
+				<div class="travelIcon"></div>
+			</div>
+			<div class="statistic">
+				<p class="data dataGas">${{statistics.gas_savings}}</p>
+				<p class="stat-label">Ahorro en Combustible</p>
+				<div class="fuelIcon"></div>
+			</div>
+			<a href="/ayuda/" target="_blank"> <div class="span4 banner-index"></div></a>
+		</div>
+
+
+
+		<div class="span4">
+
+			<div class="title ">
+				<h1>Recorridos Publicados</h1>
+			</div>
+
+			<div class="nugget upcoming-nugget">
+
+
+				<div class="UpcomingTripsItem clearfix upcomingItem" ng-repeat="trip in upcomingTrips">
+
+					<div class="row">
+						<div class="span1 image">
+							<img src="{{trip.creator.avatar}}" class="thumbnail" data-toggle="tooltip" title="{{trip.creator.first_name}} {{trip.creator.last_name}}">
+						</div>
+						<div class="span3 offset1">
+							<div class="row">
+								<div class="span1 in">
+									<p><span>Desde:</span></p>
+								</div>
+								<div class="span2 out">
+									<p>{{trip.origin.address1}}</p>
+								</div>
+								<div class="span1 in">
+									<p><em>Hasta:</em></p>
+								</div>
+								<div class="span2 out">
+									<p>{{trip.destination.address1}}</p>
+								</div>
+								<div class="span1 in">
+									<p>Sale en:</p>
+								</div>
+								<div class="span2 out">
+									<div class="trip-countdown">
+										<p>9 hrs 58 min</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="span4">
+			<div class="title">
+				<h1>Usuarios participando ({{users.length}})</h1>
+			</div>
+			<div class="nugget users-nugget">
+				<form novalidate name="searchUserForm" ng-submit="searchUser()">
+					<input type="text" name="q" id="user-search-input" placeholder="Nombre o correo electrónico" class="search" value="" ng-model="user_search"/>
+					<button class="btn btn-info" id="user-search-btn"> <i class="icon-search icon-white" type="submit"> </i> </button>
+				</form>
+
+				<div ng-repeat="u in users" class="thumb">
+					<div class="overlay" >{{ u.first_name }}</div>
+
+					<img class="system-user-thumb" id="user-search-match" data-toggle="tooltip" title="{{u.first_name}} {{u.last_name}}"  src="{{ u.avatar }}"/>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="span4">
+			<div class="title">
+			  <h1>Novedades</h1>
+			</div>
+			<div class="nugget" ng-show="articles" style="overflow-y:auto;width:auto">
+
+
+			  <div class="newsitem" ng-repeat="article in articles">
+			  	<a href="{{article.full_url}}">
+
+			        <!--<div class="newsthumbnail thumbnail"></div>-->
+
+			    	<img class="newsthumbnail thumbnail" src="{{article.img}}" />
+
+				</a>
+			    <div class="newstitle">
+			      <h4><a href="{{article.full_url}}">
+			       {{article.title}}
+			     </a>
+			     </h4>
+			    </div>
+
+			    <div class="newsresume">
+			      <p>
+			      	<a href="{{article.full_url}}">
+			        {{article.short_content}}
+			    	</a>
+			      </p>
+			    </div>
+			  </div>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

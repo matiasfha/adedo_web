@@ -1,0 +1,118 @@
+<div class="top-container">
+	<div class="map-container login" style="height:390px">
+
+		<div id="fotoLogin">
+			<div class="containSignup">
+
+				<div class="title">
+					<h1> Regístrate </h1>
+				</div>
+
+				<form novalidate ng-submit="registerUser()" name="registerForm">
+					<br>
+					<label for="Nombre"><p>Nombre:<span>*</span></p></label>
+					<div class="inner">
+						<input type="text" placeholder="Nombre" id="input-nombre" name="nombre" ng-model="user.name" required ng-class="{submitted:registerForm.submitted}" />
+					</div>
+
+					<label for="Apellido"><p>Apellido:<span>*</span></p></label>
+					<div class="inner">
+						<input type="text" placeholder="Apellido" id="input-apellido" name="apellido" ng-model="user.lastname" required ng-class="{submitted:registerForm.submitted}"/>
+					</div>
+
+					<label for="nacimiento"><p>Fecha de nacimiento:<span>*</span></p></label>
+					<div class="inner">
+						<select  id="input-dia_nacimiento" ng-model="user.birth.day" ng-options="n for n in [] | range:1:32" required ng-class="{submitted:registerForm.submitted}">
+							<option value="">Día</option>
+						</select>
+
+						<select class="long-select"id="input-mes_nacimiento" ng-model="user.birth.month" ng-options="n for n in [] | range:1:13" required ng-class="{submitted:registerForm.submitted}">
+							<option value="">Mes</option>
+
+						</select>
+
+						<select id="input-ano_nacimiento" ng-model="user.birth.year" ng-options="n for n in [] | range:1970:2015" required ng-class="{submitted:registerForm.submitted}">
+							<option value="">Año</option>
+
+						</select>
+					</div>
+
+
+					<label for="sexo"><p>Tu sexo:</p></label>
+					<div class="inner" style="margin-right: 153px">
+						<select class="long-select" name="sexo" id="input-sexo" ng-model="user.gender">
+							<option value="">Elige una:</option>
+							<option value="m">Hombre</option>
+							<option value="f">Mujer</option>
+						</select>
+					</div>
+
+					<label for="sector"><p>Tu campus:</p></label>
+					<div class="inner" style="margin-right: 153px">
+						<select class="long-select" name="sede" id="input-sector" ng-model="user.headquarter" ng-options="s.short_name for s in sedes">
+							<option value="">Elige un campus</option>
+
+						</select>
+
+					</div>
+
+					<label for="phone"><p>Tu teléfono</p></label>
+					<div class="inner">
+						<input type="text" placeholder="Ej: 61952145" id="input-phone" ng-model="user.phone" />
+					</div>
+
+					<label for="email"><p>Tu correo electrónico<span>*</span></p></label>
+					<div class="inner">
+						<input type="email" placeholder="@unab.cl / @uandresbello.edu" id="input-email" ng-model="user.email" required ng-class="{submitted:registerForm.submitted}"/>
+					</div>
+
+					<label for="password"><p>Crea tu contraseña<span>*</span></p></label>
+					<div class="inner">
+						<input type="password" placeholder="Contraseña" id="input-password" ng-model="user.password" required ng-class="{submitted:registerForm.submitted}"/>
+					</div>
+
+					<label for="repassword"><p>Repite tu contraseña<span>*</span></p></label>
+					<div class="inner">
+						<input type="password" placeholder="Repite tu contraseña" id="input-repassword" ng-model="user.password_confirm" required ng-class="{submitted:registerForm.submitted}" password-match="user.password"/>
+					</div>
+
+					<label for="repassword"><p>Agrega tu foto de perfil:</p></label>
+					<div class="inner" style="margin-right: 22px">
+						<upload-btn data-style="float:right;top:-40px;position:relative"></upload-btn>
+					</div>
+
+					<div class="btnSignUp" id="btnSignUp">
+						<button type="button" class="btn btn-info" goto="/login" ng-click="routeChange()">
+							<i class="icon-chevron-left icon-white"> </i> Poseo una cuenta
+						</button>
+						<button class="btn btn-success" type="submit"
+						ng-disabled="registerForm.$invalid">
+						Registrarse  <i class="icon-ok icon-white"> </i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="logosbannerLogin">
+			<div class="logosLogin"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container mainContainer login">
+	<div class="row">
+		<div class="bannerLogin">
+			<a href="https://itunes.apple.com/cl/app/a-dedo-unab-profesores/id701935890?ls=1&mt=8" target="_blank"><div class="link_banner bannerUno"></div></a> <!-- iOS -->
+			<a href="https://play.google.com/store/apps/details?id=com.a_dedo.funab.activities" target="_blank"><div class="link_banner bannerDos"></div></a> <!-- Android -->
+		</div>
+	</div>
+</div>
+<!-- Fin del núcleo -->
+
+
+
+
+

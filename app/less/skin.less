@@ -1,0 +1,333 @@
+/* @license
+ * MyFonts Webfont Build ID 2549123, 2013-05-06T17:03:52-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Museo 300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo/300/
+ * Licensed pageviews: Unlimited
+ *
+ * Webfont: Museo 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo/500/
+ * Licensed pageviews: 0
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2549123
+ * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
+ *
+ * © 2013 MyFonts Inc
+*/
+
+/* SKIN LESS CSS */
+@backgroundColor:   #e3e3e3;
+@colorUno: #9c0f2d;
+@colorDos: #005190;
+@colorTres: #efc30c;
+@colormodulos: #d8d9dd;
+@colortextNormal: #4d4d4d;
+@colortextSpecial: #fff;
+@colortextOther: #005190;
+@colorAlerta: @colormodulos;
+@font: arial, sans-serif;
+@fontTitle: Museo-500;
+
+// Imagenes
+//--------------------------------------------------------------
+@imgDir: '/img/';
+
+//Banners
+@img_bannerLogin: url('@{imgDir}bannerLogin.png');
+@img_bannerIndex: url('@{imgDir}banner.png');
+
+//Backgrounds
+@img_fondobody: url('@{imgDir}bkg_puc.png');
+@img_fondoLogin: url('@{imgDir}fondoLogin.jpg');
+@img_fondoMapa: url('@{imgDir}fondoMapa.jpg');
+
+//Búsqueda
+@img_icon-search-from: url("@{imgDir}icon-from.png");
+@img_icon-search-to: url("@{imgDir}icon-to.png");
+
+//Estadísticas
+@img_fuelIcon: url("@{imgDir}fuel-icon.png");
+@img_recycleIcon: url("@{imgDir}recycle-icon.png");
+@img_travelIcon: url("@{imgDir}travel-icon.png");
+
+//Logos
+@img_iconoLista: url("@{imgDir}icono_lista.png");
+@img_logoError: url("@{imgDir}logo-error.png");
+@img_logofooter :url('@{imgDir}logo_a-dedo.png');
+@img_logofooterAdedo: url('@{imgDir}logofooterADedo.png');
+@img_logofooterUno: url('@{imgDir}logofooterUnab.png');
+@img_logofooterDos: url('@{imgDir}logofooterCuida.png');
+@img_logoHeader: url("@{imgDir}logo-header.png");
+@img_logoHeaderUno: url("@{imgDir}logo_Header_sustentable.png");
+@img_logoHeaderDos: url("@{imgDir}logo_Header_puc.png");
+@img_logoHeaderTres: url("@{imgDir}logo_Header_aDedo.png");
+@img_logosHeader: url("@{imgDir}logos_header.png");
+@img_logoHeaderLogin: url("@{imgDir}logo-header.png");
+@img_logosLogin: url("@{imgDir}logosLogin.png");
+@img_logoSignup:url("@{imgDir}logo-signUp.png");
+
+//Loading
+@img_ajaxLoading: url("@{imgDir}ajax-loading.gif");
+@img_loading :url('@{imgDir}loading.gif');
+@img_loadingBG :url('@{imgDir}loadingBG.png');
+
+//Mapa
+@img_etiquetaMapa: url("@{imgDir}boton_mapa.png");
+@img_etiquetaMapa_back: url("@{imgDir}boton_mapa_back.png");
+
+//Noticias
+@img_news_list :url('@{imgDir}news-list-image.jpg');
+@img_news :url('@{imgDir}news-image.jpg');
+@img_news_sidebar :url('@{imgDir}news-sidebar-image.jpg');
+@img_newsimage:url("@{imgDir}news-image.jpg");
+
+//Perfil
+@img_perfil:url('@{imgDir}perfil.jpg');
+@img_missingProfile:url("@{imgDir}missing_profile.png");
+@img_thumbs-up :url('@{imgDir}glyphicons_343_thumbs_up.png');
+@img_thumbs-down :url('@{imgDir}glyphicons_344_thumbs_down.png');
+
+//Publicar recorrido
+@img_btnSiguientePublish: url('@{imgDir}btn-siguiente-publish.png');
+@img_btnAnteriorPublish: url('@{imgDir}btn-anterior-publish.png');
+@img_btnOkPublish :url('@{imgDir}btn-siguiente-publish-ok.png');
+@img_driver: url('@{imgDir}driver.png');
+@img_pasoUno: url('@{imgDir}paso1.png');
+@img_pasoDos: url('@{imgDir}paso2.png');
+@img_pasoTres: url('@{imgDir}paso3.png');
+@img_pasoCuatro: url('@{imgDir}paso4.png');
+@img_pasoUno_passenger: url('@{imgDir}paso1-2.png');
+@img_pasoDos_passenger: url('@{imgDir}paso2-2.png');
+@img_pasoTres_passenger: url('@{imgDir}paso3-2.png');
+@img_passenger: url('@{imgDir}passenger.png');
+
+//Redes sociales
+@img_btnFacebook: url("@{imgDir}btn-facebook.png");
+@img_btnGoogle: url("@{imgDir}btn-google.png");
+@img_btnTwitter: url("@{imgDir}btn-twitter.png");
+
+//Otros iconos
+@img_arrow-box-up :url('@{imgDir}arrow-box-up.png');
+@img_processing :url('@{imgDir}processing.gif');
+@img_stat-bg: url("@{imgDir}stat-bg.png");
+@img_searchIcon: url("@{imgDir}search-icon.png");
+
+// @Font-face
+//---------------------------------------------------
+
+@font-face {
+    font-family: 'Museo-300';
+    src: url('webfonts/26E583_0_0.eot');
+    src: url('webfonts/26E583_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E583_0_0.woff') format('woff'),url('webfonts/26E583_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Museo-500';
+    src: url('webfonts/26E583_1_0.eot');
+    src: url('webfonts/26E583_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E583_1_0.woff') format('woff'),url('webfonts/26E583_1_0.ttf') format('truetype');
+}
+
+// Mixins
+//---------------------------------------------------
+
+.Museo-300 {
+    font-family: Museo-300;
+    font-weight: normal;
+    font-style: normal;
+}
+.Museo-500 {
+    font-family: Museo-500;
+    font-weight: normal;
+    font-style: normal;
+}
+.bordeR (@radio: 7px) {
+    -moz-border-radius: @radio;
+    -webkit-border-radius: @radio;
+    border-radius: @radio;
+}
+.bordeR2 (@radio: 12px) {
+    -moz-border-radius: @radio;
+    -ms-border-radius: @radio;
+    -o-border-radius: @radio;
+    -webkit-border-radius: @radio;
+    border-radius: @radio;
+}
+.input  {
+    margin-bottom: 10px;
+    height: 25px;
+    width: 270px;
+    border: 1px solid @colormodulos - #222;
+    background-color: @colormodulos;
+    font-size: 12px;
+}
+.moduloItem (@coloruno: @colormodulos, @colordos: @colormodulos - #111) {
+    .bordeR;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    background: @coloruno; /* Old browsers */
+    background: -moz-linear-gradient(top, @coloruno, @colordos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@coloruno), color-stop(100%,@colordos)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @coloruno,@colordos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @coloruno,@colordos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @coloruno,@colordos); /* IE10+ */
+    background: linear-gradient(to bottom, @coloruno,@colordos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9dd', endColorstr='#c7c8cc',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.75), 1px 1px 0 rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.75), 1px 1px 0 rgba(255, 255, 255, 0.75);
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 1), 1px 1px 0 rgba(255, 255, 255, 1);
+}
+.moduloItemSelected  {
+    .moduloItem (@colormodulos - #444, @colormodulos - #666);
+    border-bottom: 1px solid @colormodulos - #666;
+    border-top: 1px solid @colormodulos - #222;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A7B0B4', endColorstr='#889195',GradientType=0 ); /* IE6-9 */
+}
+.Itemlight (@coloruno: @colormodulos + #222, @colordos: @colormodulos) {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.publishStep {
+    width: 580px;
+    height: 26px;
+    margin: 4px 40px 4px 4px;
+    float: right;
+}
+.status (@coloruno, @colordos) {
+    background-color: @coloruno;
+    background: -moz-linear-gradient(top, @coloruno, @colordos);
+    background: -ms-linear-gradient(top, @coloruno, @colordos);
+    background: -o-linear-gradient(top, @coloruno, @colordos);
+    background: -webkit-linear-gradient(top, @coloruno, @colordos);
+    background: linear-gradient(top, @coloruno, @colordos);
+}
+.status-cancel-color {
+    .status (#912432, #4c1a20);
+}
+.status-delete-color {
+    .status (#7D0000, #000);
+}
+.status-following-color {
+    .status (#77c7ff, #39a6f2);
+}
+.status-none-color {
+    .status (#999, #666);
+}
+.status-normal-color {
+    .status (#00a1ff, #0875c5);
+}
+.status-ok-color {
+    .status (#63b6f0, #1a71ad);
+}
+._exit {
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 18px;
+    height: 18px;
+    background: @colormodulos - #333;
+    cursor:pointer;
+    p {
+        color: #FFF;
+        font-size: 10px;
+        font-weight: 900;
+    }
+}
+.popup-box {
+    display:none;
+    .bordeR;
+    position: fixed;
+    z-index: 4000;
+    padding: 10px;
+    text-align: center;
+    background-color: @colormodulos;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+     .in {
+        margin-left: 5px;
+        width: 130px;
+    }
+    .out {
+        margin-bottom: 15px;
+        width: 150px;
+    }
+    .dropdown-toggle {
+        width: 140px;
+        text-align: left;
+        .caret {
+            float: right;
+        }
+    }
+    input, textarea {
+        width: 150px;
+    }
+    .cell-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 0;
+        width: 100%;
+        background: @colormodulos - #222;
+    }
+    li {
+        display: block;
+        margin: 0 -11px;
+        padding: 10px;
+        border-bottom: 1px solid @colormodulos - #222;
+        border-top: 2px solid #fff;
+        height: 20px;
+        text-align: left;
+        font-size: 13px;
+        i {
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: @colorUno;
+        }
+        a:hover {
+            color: @colorDos;
+        }
+    }
+    li:first-child {
+        margin-top: -10px;
+        border-top: none;
+    }
+    li:last-child {
+        margin-bottom: -12px;
+        border-bottom: none;
+    }
+    .arrow-box-up {
+        width: 22px;
+        height: 18px;
+        background: @img_arrow-box-up no-repeat;
+        position: absolute;
+        top: -14px;
+        left: 5px;
+    }
+    .profile-arrow-box-up {
+        width: 22px;
+        height: 18px;
+        background: @img_arrow-box-up no-repeat;
+        position: absolute;
+        top: -14px;
+        left: 165px;
+    }
+    .exit {
+        ._exit;
+    }
+}

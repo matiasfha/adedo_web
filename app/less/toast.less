@@ -1,0 +1,42 @@
+
+.toast-element{
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    z-index:1000;
+    opacity: 0;
+}
+
+.toast-background{
+
+    .toast-element;
+
+    color: black;
+    background-color: black;
+    border-color: black;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.toast-text{
+    .toast-element;
+
+    color: white;
+}
+
+.toast-background, .toast-text{
+    padding: 3px;
+}
+
+.toast-text{
+    border-radius: 8px;
+}
+
+.toast-background-user, .toast-text-user{
+    padding: 10px;
+    z-index: 10000;
+}
+
+.toast-text-user{
+    border: 2px solid black;
+}

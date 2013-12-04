@@ -1,0 +1,62 @@
+
+
+<div class="top-container">
+	<div class="map-container login" style="height:390px">
+		<div id="fotoLogin">
+			<div id="MaincontainLogin">
+				<div id="signUp-log">
+					<h2> ¡Bienvenidos funcionarios! </h2>
+					<div id="porta-logo-login"></div>
+					<h5>¿Primera vez en el sitio?</h5>
+					<button class="btn btn-small btn-danger" goto="/signup">
+						¡Regístrate aquí!
+					</button>
+				</div>
+				<div id="containLogin">
+					<form novalidate ng-submit="login()" name="loginForm">
+						<div class="inner">
+							<label for="login_email"><h5>Ingresa con tu email @unab.cl o @uandresbello.edu</h5></label>
+							<input type="email" name="login_email"  placeholder="@unab.cl / @uandresbello.edu" id="login_email" ng-model="user_data.email" required  ng-class="{submitted:loginForm.submitted}" />
+						</div>
+						<div class="js-login">
+							<div class="inner">
+								<label for="login_password"></label>
+								<input id="login_password"  type="password" placeholder="Ingresa tu contraseña" ng-model="user_data.password" required  ng-class="{submitted:loginForm.submitted}" />
+							</div>
+							<p>¿Olvidaste tu contraseña?<a href="#"> Pincha acá</a></p>
+
+							<button class="btn btn-primary" type="submit" ng-disabled="loginForm.$invalid">
+								Ingresa a tu cuenta <i class="icon-chevron-right icon-white"></i>
+							</button>
+						</form>
+					</div>
+					<div class="hidden">
+						<br>
+						<p>¿Conoces tu contraseña?<a href="#" class="js-go-to-login-btn"> Ingresar</a></p>
+						<button class="btn btn-primary js-send-password-btn">Recuperar Contraseña</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logosbannerLogin">
+			<div class="logosLogin"></div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div class="mainContainer login">
+	<div class="row">
+		<div class="bannerLogin">
+			<a href="https://itunes.apple.com/cl/app/a-dedo-unab-profesores/id701935890?ls=1&mt=8" target="_blank"><div class="link_banner bannerUno"></div></a> <!-- iOS -->
+			<a href="https://play.google.com/store/apps/details?id=com.a_dedo.funab.activities" target="_blank"><div class="link_banner bannerDos"></div></a> <!-- Android -->
+		</div>
+	</div>
+</div>
+<!-- Fin del núcleo -->
+
+
+

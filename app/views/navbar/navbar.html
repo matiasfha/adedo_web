@@ -1,0 +1,63 @@
+<header>
+	<nav>
+		<div class="row">
+			<ul>
+				<li><a href="#" title="home" class="button-home">
+					<i class="icon-home icon-black"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="mis recorridos" id="usertrips-menu">Mis recorridos</a>
+			</li>
+			<li>
+				<a href="#" title="mensajes">Mensajes
+					<span class="badge js-message-count" style="display: none;">0</span></a>
+				</li>
+				<li>
+					<a href="#" title="Notificaciones" id="notifications-menu">Notificaciones <span class="badge js-notify-count" style="display: none;">0</span></a>
+				</li>
+				<li>
+					<a href="#" title="perfil" id="profile-menu">
+
+						{{User.first_name}}
+						<i class="icon-chevron-down icon-black"></i>
+					</a>
+				</li>
+				<li>
+					<button class="btn btn-small btn-primary btn-publish" id="create-trip-btn">
+						<i class="icon-plus icon-white"></i> Publicar recorrido
+					</button>
+				</li>
+			</ul>
+			<div id="porta-logo">
+				<div id="logoHeader">
+				</div>
+			</div>
+			<div class="span6 logosHeader">
+				<div class="row">
+					<a href="http://sustentable.uc.cl/" target="_blank" title="sustentable.uc.cl">
+						<div class="span2 logo logoUno"></div>
+					</a>
+					<a href="http://www.uc.cl/" target="_blank" title="uc.cl">
+						<div class="span2 logo logoDos"></div>
+					</a>
+					<a href="http://empresas.a-dedo.cl/" target="_blank" title="empresas.a-dedo.cl">
+						<div class="span2 logo logoTres"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="profile-box" style="display:none">
+			<div class="profile-arrow-box-up"></div>
+			<ul>
+				<li><a href="#" title=""> <i class="icon-user"></i>Ver perfil</a></li>
+
+				<li><a href="#" title="" id="profile-config"><i class="icon-edit"></i>Configurar perfil</a></li>
+				<li>
+					<a href="/ayuda/" title="ayuda" ><i class="icon-question-sign"></i>Ayuda</a>
+				</li>
+				<li><a href="#" title="" id="profile-logout"> <i class="icon-remove"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
